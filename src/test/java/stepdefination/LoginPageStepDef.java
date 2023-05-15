@@ -33,14 +33,9 @@ public class LoginPageStepDef {
         Assert.assertEquals(title, homePageTitle);
     }
 
-    @Then("login and redirect to homepage")
+    @And("login and redirect to homepage")
     public void login_and_redirect_to_homepage() {
         loginPage.login();
-    }
-
-    @Then("login page close driver")
-    public void login_page_close_driver() {
-        loginPage.closeDriver();
     }
 
 }
